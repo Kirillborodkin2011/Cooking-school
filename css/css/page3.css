@@ -1,0 +1,317 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #DDF0BD;
+    height: 136px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 100px; 
+}
+
+.menu {
+    display: flex;
+    height: 80px;
+    padding-right:30px;
+    padding-top: 30px;
+    justify-content: end;
+    gap: 40px;
+    flex: 1 0 0;
+}
+
+.menu-elements {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-decoration: none;
+}
+.menu-elements:hover {
+    color: #bdd19b; 
+}
+
+.syp {
+    text-align: center;
+    border: 1px solid #ECFFCC;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.sy {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #DDF0BD;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #bdd19b;
+}
+
+.krem {
+    text-align: center;
+    border: 1px solid #ECFFCC;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+.tykva {
+   width: 290px;
+   height: 280px;
+   border-radius: 10px;
+}
+
+.tykv {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.borch {
+    text-align: center;
+    border: 1px solid #ECFFCC;
+    border-radius: 10px;
+    max-width: 300px;
+}
+.borc{
+   width: 290px;
+   height: 280px;
+   border-radius: 10px;
+}
+
+.bor {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: #bdd19b;
+}
+
+.Dodat {
+    text-align: center;
+    border: 1px solid #ECFFCC;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+.doda{
+   width: 290px;
+   height: 280px;
+   border-radius: 10px;
+}
+
+footer {
+    background-color: #DDF0BD;
+}
+
+.puplic{
+    text-align: center;
+    font-size: 30px;
+}
+
+.emailone{
+    font-size: 25px;
+}
+
+.emailtwo{
+    font-size: 25px;
+}
+
+.text{
+   margin-left: 40px; 
+   margin-top: 70px;
+   transform: translateY(50px);
+}
+.contanier-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.syp {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.syp:hover {
+    transform: translateY(-5px);
+}
+
+.syp img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.syp p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   } 
+   .search{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background:#ECFFCC ;
+    border-radius: 60px;
+    box-shadow: 0 0 0 5px rgb(255, 255, 255);
+    transition: 2s;   
+    margin-bottom: 50px;
+  }
+  .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background:#ECFFCC;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  }
+  
+  .search .icon::before{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid rgb(178, 221, 178);
+  transform: translateX(-2px) translateY(-2px);
+  }
+  
+  .search .icon::after{
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 12px;
+  background:rgb(178, 221, 178);
+  transform: translateX( 8px) translateY(8px) rotate(-45deg);
+  }
+  
+  .search.active{
+  width: 350px;
+  }
+
+  .search .input{
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search .input input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 0;
+    background-color: #ECFFCC;;
+  }
+
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.29); /* Темный фон с прозрачностью */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #ECFFCC; /* Светлый фон */
+    margin: 5% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тени */
+    width: 80%;
+    max-width: 600px; /* Увеличенная максимальная ширина */
+}
+
+.close {
+    color: #ff4d4d; /* Более мягкий красный цвет */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s; /* Плавный переход */
+}
+
+.close:hover,
+.close:focus {
+    color: #ff9999; /* Изменение цвета при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+#output img {
+    max-width: 100%;
+    border-radius: 10px; /* Скругленные углы изображений */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тени изображений */
+}
+
+input[name="dish-name"] {
+    width: calc(100% - 22px); /* Полная ширина с учетом отступов */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Скругленные углы */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Внутренние тени */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+}
+
+input[name="dish-name"]:focus {
+    border-color: #ff4d4d; /* Изменение цвета границы при фокусе */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 77, 77, 0.2); /* Внешние тени при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+}
+
